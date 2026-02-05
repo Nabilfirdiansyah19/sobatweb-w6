@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-studio-black text-studio-beige font-sans antialiased selection:bg-studio-red selection:text-white overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply bg-black/60 backdrop-blur-md border-b border-white/10;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-studio-gold to-studio-beige bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-studio-red text-white font-medium rounded-sm transition-all duration-300 hover:bg-red-700 hover:scale-105 active:scale-95 text-center;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 border border-studio-beige text-studio-beige font-medium rounded-sm transition-all duration-300 hover:bg-studio-beige hover:text-studio-black hover:scale-105 active:scale-95 text-center;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 py-24;
+  }
+
+  .card-premium {
+    @apply bg-studio-gray/50 border border-white/5 p-8 rounded-sm hover:border-studio-red/40 transition-all duration-500 hover:-translate-y-2;
+  }
+}
+
+.reveal-transition {
+  transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
