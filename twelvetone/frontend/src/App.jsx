@@ -13,7 +13,7 @@ import ScrollReveal from './components/ScrollReveal';
 
 function App() {
   return (
-    <div className="bg-studio-black">
+    <div className="bg-studio-black overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
