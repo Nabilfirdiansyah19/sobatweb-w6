@@ -23,12 +23,12 @@ export default defineConfig({
         display: 'standalone', // Tambahkan ini agar web terasa seperti aplikasi beneran
         icons: [
           {
-            src: '1.png',
+            src: 'satu.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '2.png',
+            src: 'dua.png',
             sizes: '512x512',
             type: 'image/png'
           }
