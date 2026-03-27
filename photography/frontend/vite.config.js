@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      // --- TAMBAHKAN INI ---
+      includeAssets: ['satu.png', 'dua.png'],
       devOptions: {
         enabled: true // Ini kunci agar Manifest muncul di localhost
       },
