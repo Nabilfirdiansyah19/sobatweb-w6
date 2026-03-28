@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import Chatbot from './components/Chatbots';
 import PreLoader from './components/PreLoader';
 import Testimonials from './components/Testimonials';
+import PWAHandler from './components/PWAHandler';
+
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -37,6 +39,7 @@ function App() {
         <Footer />
         <Chatbot isLoading={isLoading} />
       </main>
+        <PWAHandler />
     </div>
   );
 }
