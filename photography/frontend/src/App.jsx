@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import Chatbot from './components/Chatbots';
 import PreLoader from './components/PreLoader';
 import Testimonials from './components/Testimonials';
-import PWAHandler from './components/PWAHandler';
 import Schedule from "./components/Schedule";
 
 
@@ -41,7 +40,7 @@ function App() {
         <Footer />
         <Chatbot isLoading={isLoading} />
       </main>
-        <PWAHandler />
+       
     </div>
   );
 }
