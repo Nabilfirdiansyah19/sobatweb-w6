@@ -9,6 +9,7 @@ import Chatbot from './components/Chatbots';
 import PreLoader from './components/PreLoader';
 import Testimonials from './components/Testimonials';
 import PWAHandler from './components/PWAHandler';
+import Schedule from "./components/Schedule";
 
 
 import { AnimatePresence } from 'framer-motion';
@@ -34,6 +35,7 @@ function App() {
         <Hero />
         <About />
         <Gallery />
+        <Schedule />
         <Testimonials />
         <Contact />
         <Footer />
